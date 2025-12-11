@@ -19,7 +19,7 @@ registerForm.addEventListener('submit', function(event) {
     // TRN format validation (000-000-000)
     const trnPattern = /^\d{3}-\d{3}-\d{3}$/;
 
-    if (!trnPattern.test(trn)) {
+    if (!trnPattern.test(trn)) { //VALIDATE FORMAT
         alert ( "TRN must be in the format 000-000-000 include hyphen.");
         return;
     }
@@ -31,9 +31,9 @@ registerForm.addEventListener('submit', function(event) {
     }
 
     // Check if age is over 18
-    const birthDate = new Date(dob);
-    const today = new Date();
-    const age = today.getFullYear() - birthDate.getFullYear();
+    const birthDate = new Date(dob); // Convert DOB string to Date object
+    const today = new Date(); //CURRENT DATE
+    const age = today.getFullYear() - birthDate.getFullYear(); //calculate age by subtracting year
 
     if (
         age < 18 ||
@@ -62,7 +62,7 @@ registerForm.addEventListener('submit', function(event) {
         gender,
         phone,
         email,
-        trn,       // ← TRN used as username
+        trn,       //  TRN used as username
         password,
         dateOfRegistration: new Date().toISOString(),
         cart: {},
@@ -71,7 +71,8 @@ registerForm.addEventListener('submit', function(event) {
 
     // Save new user
     existingUsers.push(newUser);
-    localStorage.setItem('RegistrationData', JSON.stringify(existingUsers));
+    localStorage.setItem('RegistrationData', JSON.stringify(existingUsers));//ARRAY OF USERS SAVED IN LOCAL STORAGE
+
 
     // Success message
     registerError.style.color = "green";
