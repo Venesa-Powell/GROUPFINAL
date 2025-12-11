@@ -1,0 +1,133 @@
+/* Cart page css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+header{
+    background-color: rgb(215, 240, 75);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 8px rgba(8, 43, 95, 0.5);
+}
+
+#logo{
+    width: 250px ;
+    height: 300px ;
+    margin-bottom: -60px;
+    margin-top: -70px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav {
+    margin-top: 10px; 
+    margin-bottom: 20px;    
+}
+
+nav a {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+nav a:hover {
+      background-color: skyblue;
+    }
+
+#checkout-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 50px;
+    background-color: rgb(215, 240, 75);
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(8, 43, 95, 0.5);
+}
+
+#cart-summary {
+    margin-bottom: 30px;
+    font-size: 20px;
+     
+}
+
+/* this applies for shopping cart summary & shipping details*/
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th {
+    padding: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+#shipping-details {
+    margin-top: 60px;
+}
+
+form label {
+    display: block;
+    margin: 5px auto;
+    font-size: 20px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 2px solid #000000;
+    background-color: rgb(133, 201, 228);
+    border-radius: 5px;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border: 2px solid #7c277c;
+}
+
+button {
+    background-color:  rgb(133, 201, 228);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(skyblue, rgb(75, 75, 240) ) ;
+    box-shadow: 0 5px 15px rgba(42, 9, 229, 0.5);
+    transform: translateY(-3px);
+}
+

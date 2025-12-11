@@ -1,0 +1,42 @@
+<!-- 
+    Individual Assignment 2 
+    Course: CIT2011 - Introduction to Web Development
+    Name: Christopher Chin
+    Date Due: 2025-11-13
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of Website -->
+    <title> PC One Stop Central </title>
+    <!--Linking css to html -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="PC-Login-container">
+        <h2>Login to PC One Stop Central </h2>
+        <form id="PC-login-form">
+            <label for="trn">TRN:</label>
+            <input type="text" id="trn" name="trn" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+
+            <button type="submit">Login</button>
+            <button type="button" id="cancel" onclick="window.location.href='index.html'" >Cancel</button>
+        </form>
+    
+        <a href="forgotpassword.html" id="forgot-password">Forgot Password</a>
+
+        <button id="register-btn" onclick="window.location.href='register.html'">Register</button>
+        
+        <div id="error-message"></div>
+
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

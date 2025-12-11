@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - PC One Stop Central</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <img src="PClogo.png" alt="Logo" id="logo">
+        <h1>Shopping Cart</h1>
+
+        <nav>
+            <a href="products.html"> Products |</a>
+            <a href="cart.html"> My Cart |</a>
+            <a href="aboutus.html"> About Us |</a>
+            <a href="dashboard.html"> Dashboard</a>
+        </nav>
+
+    </header>
+    
+
+    <div id="cart-container">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Sub-total</th>
+                    <th>Discount</th>
+                    <th>Tax</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+
+        <div class="cart-summary">
+            <button id="clear-cart">Clear All</button>
+            <button id="checkout-btn">Check Out</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - PC One Stop Central</title>
+    <link rel="stylesheet" href="dashboard.css">
+    
+</head>
+<body>
+    <header>
+        <img src="PClogo.png" alt="Logo" id="logo">
+        <h1>Dashboard</h1>
+
+        <nav>
+            <a href="products.html"> Products |</a>
+            <a href="cart.html"> My Cart |</a>
+            <a href="aboutus.html"> About Us |</a>
+            <a href="dashboard.html"> Dashboard</a>
+        </nav>
+    </header>
+
+    <h2>DASHBOARD</h2>
+
+    <div class="dashboard-section">
+        <!-- Gender Distribution Section -->
+        <div class="section-row">
+            <div class="section-left">
+                <div class="section-title">Gender Distribution</div>
+                <table class="data-table">
+                    <tr>
+                        <th>Group Distribution</th>
+                        <th>Count</th>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td id="male-count">0</td>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td id="female-count">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section-right">
+                <div class="section-title">Gender Distribution</div>
+                <div class="pie-chart-row">
+                    <div class="pie-chart-item">
+                        <div class="pie-chart" id="male-pie"></div>
+                        <div class="pie-label">Male</div>
+                    </div>
+                    <div class="pie-chart-item">
+                        <div class="pie-chart" id="female-pie"></div>
+                        <div class="pie-label">Female</div>
+                    </div>
+                </div>
+                <!-- Legend for Gender -->
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgb(75, 75, 240);"></div>
+                        <span>Male</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgb(133, 201, 228);"></div>
+                        <span>Female</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Age Group Distribution Section -->
+        <div class="section-row">
+            <div class="section-left">
+                <div class="section-title">Age Group Distribution</div>
+                <table class="data-table">
+                    <tr>
+                        <th>Age Range</th>
+                        <th>Count</th>
+                    </tr>
+                    <tr>
+                        <td>18-25</td>
+                        <td id="age-18-25">0</td>
+                    </tr>
+                    <tr>
+                        <td>26-35</td>
+                        <td id="age-26-35">0</td>
+                    </tr>
+                    <tr>
+                        <td>36-50</td>
+                        <td id="age-36-50">0</td>
+                    </tr>
+                    <tr>
+                        <td>50+</td>
+                        <td id="age-50plus">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section-right">
+                <div class="section-title">Age Group Distribution</div>
+                <div class="pie-chart-container">
+                    <div class="pie-chart-large" id="age-pie"></div>
+                </div>
+                <!-- Legend for Age Groups -->
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgb(75, 75, 240);"></div>
+                        <span>18-25</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgb(133, 201, 228);"></div>
+                        <span>26-35</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgb(100, 180, 100);"></div>
+                        <span>36-50</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgb(240, 180, 75);"></div>
+                        <span>50+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Invoice Management Section -->
+        <div class="invoice-section">
+            <div class="section-title">Invoice Management</div>
+            <div class="search-row">
+                <input type="text" id="trn-search" class="search-input" placeholder="ENTER TRN">
+                <button id="search-btn">Search</button>
+                <button id="show-all-btn">Show All Invoices</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+
+            <div class="invoice-box">
+                <h4>User Invoices (Current User)</h4>
+                <div id="invoice-results">
+                    <!-- Invoice results will be displayed here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation Buttons -->
+        <div class="bottom-buttons">
+            <button onclick="window.location.href='products.html'">Back to Products</button>
+            <button onclick="window.location.href='index.html'">Logout</button>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

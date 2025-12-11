@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - PC One Stop Central</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+
+<header>
+    <img src="PClogo.png" alt="Logo" id="logo">
+    <h1>Invoice</h1>
+
+    <nav>
+        <a href="products.html"> Products |</a>
+        <a href="cart.html"> My Cart |</a>
+        <a href="aboutus.html"> About Us |</a>
+        <a href="dashboard.html"> Dashboard</a>
+    </nav>
+</header>
+
+<div id="invoice-container">
+
+    <h2 id="company-name">PC One Stop Central</h2>
+
+    <div id="invoice-info">
+        <p><strong>Invoice Number:</strong> <span id="inv-number"></span></p>
+        <p><strong>Date:</strong> <span id="inv-date"></span></p>
+        <p><strong>TRN:</strong> <span id="inv-trn"></span></p>
+    </div>
+
+    <h3>Shipping Information</h3>
+    <div id="shipping-box">
+        <p><strong>Name:</strong> <span id="ship-name"></span></p>
+        <p><strong>Address:</strong> <span id="ship-address"></span></p>
+    </div>
+
+    <h3>Purchased Items</h3>
+    <table id="inv-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Discount</th>
+                <th>Tax</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="inv-items"></tbody>
+    </table>
+
+    <div id="totals">
+        <p><strong>Subtotal:</strong> $<span id="inv-subtotal"></span></p>
+        <p><strong>Taxes:</strong> $<span id="inv-tax"></span></p>
+        <p><strong>Total Cost:</strong> $<span id="inv-total"></span></p>
+    </div>
+
+    <!-- Bottom Navigation Buttons -->
+        <div class="bottom-buttons">
+            <button onclick="window.print()">Print Invoice</button>
+            <button onclick="window.location.href='products.html'">Back to Products</button>
+            <button onclick="window.location.href='index.html'">Logout</button>
+        </div>
+        
+</div>
+
+<script src="invoice.js"></script>
+</body>
+</html>

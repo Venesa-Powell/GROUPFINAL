@@ -1,0 +1,85 @@
+/*
+    Individual Assignment 2 
+    Course: CIT2011 - Introduction to Web Development
+    Name: Christopher Chin
+    Date Due: 2025-11-13
+*/
+
+body{
+     font-family: 'Arial', sans-serif;
+     margin: 0;
+     padding: 0px;
+     background: linear-gradient(skyblue, rgb(75, 75, 240) );
+
+     /* text colour*/
+     color: black; 
+     display: flex;
+     justify-content: center;
+
+    /* creates a smaller display */
+     align-items: center;
+     height: 100dvh;
+}
+
+.PC-Login-container{
+    width: 400px;
+    padding: 40px;
+    background-color: rgb(215, 240, 75);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgb(75, 75, 240);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px ;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 4px solid rgb(31, 122, 158);
+    padding-bottom: 10px; 
+}
+
+input[type="email"],
+input[type="text"], 
+input[type="password"] 
+{
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    background: rgb(197, 223, 233);
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button{
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    background: rgb(133, 201, 228);
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: linear-gradient(skyblue, rgb(75, 75, 240) ) ;
+    box-shadow: 0 5px 15px rgba(42, 9, 229, 0.5);
+}
+
+
+

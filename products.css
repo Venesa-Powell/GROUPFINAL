@@ -1,0 +1,221 @@
+/* Product page css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+header {
+    background-color: rgb(215, 240, 75);
+    box-shadow: 0 4px 8px rgba(71, 26, 231, 0.5);
+    padding:20px;
+    text-align: center;
+}
+
+#logo{
+    width: 250px ;
+    height: 300px ;
+    margin-bottom: -60px;
+    margin-top: -70px;
+}
+
+nav {
+    margin-top: 10px; 
+    margin-bottom: 20px;
+     
+}
+
+nav a {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+nav a:hover {
+      background-color: skyblue;
+    }
+
+ h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#logout-btn {
+    
+    background-color: skyblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}   
+
+#logout-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* editing style for computer parts (product)*/
+.products-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+
+.product {
+    background-color: rgb(215, 240, 75);;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    font-size: 26px;
+    margin: 10px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product p {
+    font-size: 16px;
+    color: #000000 ;
+}
+
+/* Add to cart button layout  (editing) */
+.add-to-cart {
+    background-color: rgb(133, 201, 228);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(skyblue, rgb(75, 75, 240) ) ;
+    box-shadow: 0 5px 15px rgba(42, 9, 229, 0.5);
+    transform: translateY(-3px); 
+}
+
+
+/* Shopping Cart editing */
+.cart {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(215, 240, 75);;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart:hover {
+    transform: scale(1.05);
+}
+
+.cart h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* cart list */
+#cart-items li {
+    background-color: rgb(133, 201, 228);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.remove-from-cart{
+    background-color: rgb(235, 229, 229);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.remove-from-cart:hover {
+    background: linear-gradient(skyblue, rgb(75, 75, 240) ) ;
+    box-shadow: 0 5px 15px rgba(42, 9, 229, 0.5);
+    transform: translateY(-3px); 
+}
+
+
+#checkout-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(133, 201, 228);;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#checkout-btn:hover {
+    background: linear-gradient(skyblue, rgb(75, 75, 240) );
+    box-shadow: 0 5px 15px rgba(42, 9, 229, 0.5);
+    transform: translateY(-3px); 
+}
+
+
+
